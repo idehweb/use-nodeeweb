@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@nodeeweb/server": "file:/Users/hamidalinia/Documents/projects/nodeeweb-server",
-    "@nodeeweb/shop": "file:/Users/hamidalinia/Documents/projects/nodeeweb-shop",
+    "@nodeeweb/server": "^0.0.8",
+    "@nodeeweb/shop": "^0.0.4",
     "dotenv": "^16.0.1"
   },
   "scripts": {
