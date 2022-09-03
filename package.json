@@ -1,0 +1,14 @@
+{
+  "name": "use-nodeeweb",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@nodeeweb/server": "file:/Users/hamidalinia/Documents/projects/nodeeweb-server",
+    "@nodeeweb/shop": "file:/Users/hamidalinia/Documents/projects/nodeeweb-shop",
+    "dotenv": "^16.0.1"
+  },
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "main": "index.mjs"
+}
