@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
+    "@nodeeweb/chat": "file:///Users/hamidalinia/Documents/projects/nodeeweb-chat",
+    "@nodeeweb/form": "file:///Users/hamidalinia/Documents/projects/nodeeweb-form",
     "@nodeeweb/server": "file:///Users/hamidalinia/Documents/projects/nodeeweb-server",
+    "@nodeeweb/service": "file:///Users/hamidalinia/Documents/projects/nodeeweb-service",
     "@nodeeweb/shop": "file:///Users/hamidalinia/Documents/projects/nodeeweb-shop",
     "dotenv": "^16.0.1"
   },

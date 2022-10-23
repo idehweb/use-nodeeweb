@@ -2,9 +2,25 @@
 # yarn lockfile v1
 
 
+"@nodeeweb/chat@file:///Users/hamidalinia/Documents/projects/nodeeweb-chat":
+  "resolved" "file:../nodeeweb-chat"
+  "version" "0.0.1"
+  dependencies:
+    "dotenv" "^16.0.1"
+    "express" "4"
+    "http" "^0.0.1-security"
+    "mongoose" "^6.3.2"
+    "socket.io" "^4.5.2"
+
+"@nodeeweb/form@file:///Users/hamidalinia/Documents/projects/nodeeweb-form":
+  "resolved" "file:../nodeeweb-form"
+  "version" "0.0.1"
+  dependencies:
+    "dotenv" "^16.0.1"
+
 "@nodeeweb/server@file:///Users/hamidalinia/Documents/projects/nodeeweb-server":
   "resolved" "file:../nodeeweb-server"
-  "version" "0.0.9"
+  "version" "0.0.26"
   dependencies:
     "@babel/preset-react" "^7.17.12"
     "@babel/register" "^7.17.7"
@@ -41,11 +57,20 @@
     "useragent" "^2.3.0"
     "webpack-node-externals" "^3.0.0"
 
-"@nodeeweb/shop@file:///Users/hamidalinia/Documents/projects/nodeeweb-shop":
-  "resolved" "file:../nodeeweb-shop"
+"@nodeeweb/service@file:///Users/hamidalinia/Documents/projects/nodeeweb-service":
+  "resolved" "file:../nodeeweb-service"
   "version" "0.0.5"
   dependencies:
     "dotenv" "^16.0.1"
+
+"@nodeeweb/shop@file:///Users/hamidalinia/Documents/projects/nodeeweb-shop":
+  "resolved" "file:../nodeeweb-shop"
+  "version" "0.0.6"
+  dependencies:
+    "dotenv" "^16.0.1"
+    "loadash" "^1.0.0"
+    "lodash" "^4.17.21"
+    "mime" "^3.0.0"
 
 "dotenv@^16.0.1":
   "integrity" "sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ=="
