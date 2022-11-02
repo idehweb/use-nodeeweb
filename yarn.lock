@@ -20,7 +20,7 @@
 
 "@nodeeweb/server@file:///Users/hamidalinia/Documents/projects/nodeeweb-server":
   "resolved" "file:../nodeeweb-server"
-  "version" "0.0.26"
+  "version" "0.0.50"
   dependencies:
     "@babel/preset-react" "^7.17.12"
     "@babel/register" "^7.17.7"
@@ -65,10 +65,9 @@
 
 "@nodeeweb/shop@file:///Users/hamidalinia/Documents/projects/nodeeweb-shop":
   "resolved" "file:../nodeeweb-shop"
-  "version" "0.0.6"
+  "version" "0.0.14"
   dependencies:
     "dotenv" "^16.0.1"
-    "loadash" "^1.0.0"
     "lodash" "^4.17.21"
     "mime" "^3.0.0"
 
