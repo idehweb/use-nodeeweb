@@ -2,15 +2,16 @@ import Server from '@nodeeweb/server'
 import Shop from '@nodeeweb/shop'
 import Form from '@nodeeweb/form'
 import Service from '@nodeeweb/service'
-import Guaranteecards from './plugins/guarantee-cards/index.js'
+// import Front from '@nodeeweb/front'
+// import pasar from './plugins/pasargad-gateway/index.js'
 // import Chat , {createChatServer} from '@nodeeweb/chat'
 //add shop ability
 Server({
+    // client:Front,
     entity: [
         ...Shop,
         ...Form,
         ...Service,
-        Guaranteecards,
         // ...Chat
     ],
     // server: [createChatServer]
