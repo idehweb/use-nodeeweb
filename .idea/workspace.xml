@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49bb18a3-8663-4ba3-b14f-a7999451c504" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-sample.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/static/js/main.8e36f9ae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/static/js/main.8e36f9ae.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/static/js/main.8e36f9ae.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/pasargad-gateway/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/pasargad-gateway/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/static/css/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/css/bundle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/static/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/js/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/static/js/bundle.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/js/bundle.js.LICENSE.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,21 +38,50 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".env.local" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env.local">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/zibal-gateway/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="297">
+              <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#249#2115#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/site_setting/config.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugins/zarinpal-gateway/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="131">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/pasargad-gateway/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#103#152#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,6 +125,9 @@
       <find>https://golafshanplus.com</find>
       <find>golafshanplus.com</find>
       <find>v2.</find>
+      <find>list</find>
+      <find>dependencies</find>
+      <find>dep</find>
     </findStrings>
     <replaceStrings>
       <replace>2142528000</replace>
@@ -96,6 +139,7 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/node_modules</dir>
       <dir>$PROJECT_DIR$/theme/static</dir>
+      <dir>$PROJECT_DIR$/plugins</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -104,10 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/index.html" />
-        <option value="$PROJECT_DIR$/admin/index.js" />
-        <option value="$PROJECT_DIR$/theme/settings.mjs" />
-        <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/arvand/domains/arvandguarantee.com/public_html/formapi/global.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/dev.sh" />
         <option value="$PROJECT_DIR$/ecosystem.config.js" />
@@ -138,13 +178,10 @@
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/arvand/domains/arvandguarantee.shop/public_html/main/src/global.mjs" />
         <option value="$PROJECT_DIR$/public_media/site_settings/config.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/zoomiroom/domains/zoomiroom.com/public_html/controllers/category.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/newlifenew/domains/newlifenewway.com/public_html/.env.local" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/newlifenew/domains/newlifenewway.com/public_html/public_media/site_setting/config.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/root/updateserver.sh" />
-        <option value="$PROJECT_DIR$/index.mjs" />
         <option value="$PROJECT_DIR$/plugins/pasargad-gateway/routes.js" />
-        <option value="$PROJECT_DIR$/plugins/pasargad-gateway/index.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/golafshan/domains/golafshanplus.com/public_html/plugins/pasargad-gateway/index.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/golafshan/domains/golafshanplus.com/public_html/plugins/pasargad-gateway/controller.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/golafshan/domains/golafshanplus.com/public_html/plugins/pasargad-gateway/model.js" />
@@ -155,6 +192,13 @@
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/golafshan/domains/golafshanplus.com/public_html/theme/site_setting/config.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/golafshan/domains/golafshanplus.com/public_html/.env.local" />
         <option value="$PROJECT_DIR$/.env.local" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/nodeeweb_modules/node_modules/@nodeeweb/server/src/app/handlePlugins.mjs" />
+        <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/nodeeweb_modules/node_modules/@nodeeweb/shop/product/controller.mjs" />
+        <option value="$PROJECT_DIR$/index.mjs" />
+        <option value="$PROJECT_DIR$/plugins/zibal-gateway/index.js" />
+        <option value="$PROJECT_DIR$/plugins/zarinpal-gateway/index.js" />
+        <option value="$PROJECT_DIR$/plugins/pasargad-gateway/index.js" />
       </list>
     </option>
   </component>
@@ -173,9 +217,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
+    <option name="x" value="846" />
     <option name="width" value="834" />
-    <option name="height" value="969" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,7 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,18 +237,13 @@
             <path>
               <item name="use-nodeeweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="use-nodeeweb" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="use-nodeeweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="use-nodeeweb" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="site_setting" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="use-nodeeweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="use-nodeeweb" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="pasargad-gateway" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="use-nodeeweb" type="b2602c69:ProjectViewProjectNode" />
@@ -216,6 +254,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,15 +272,15 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public_media/site_settings" />
-      <recent name="$PROJECT_DIR$/plugins" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/theme" />
       <recent name="$PROJECT_DIR$/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public_media/site_settings" />
+      <recent name="$PROJECT_DIR$/plugins" />
+      <recent name="$PROJECT_DIR$/admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -328,30 +367,34 @@
       <workItem from="1670153735852" duration="21203000" />
       <workItem from="1670339320007" duration="560000" />
       <workItem from="1670362571501" duration="1885000" />
-      <workItem from="1670502762574" duration="1174000" />
+      <workItem from="1670502762574" duration="9278000" />
+      <workItem from="1670674598180" duration="2105000" />
+      <workItem from="1670743351110" duration="4809000" />
+      <workItem from="1671269302419" duration="1672000" />
+      <workItem from="1671440890496" duration="709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322485000" />
+    <option name="totallyTimeSpent" value="339884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.44642857" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.63340336" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.34310135" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17094018" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27045178" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32967034" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -360,7 +403,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="File Transfer" order="8" weight="0.32983193" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -405,16 +447,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.mjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/morgan/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/.bin/css-beautify" />
-    <entry file="file://$PROJECT_DIR$/node_modules/.bin/eslint-config-prettier" />
     <entry file="file://$PROJECT_DIR$/node_modules/.bin/acorn" />
     <entry file="file://$PROJECT_DIR$/node_modules/.bin/html-beautify" />
     <entry file="file://$PROJECT_DIR$/node_modules/.bin/node-pre-gyp" />
@@ -547,27 +579,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/guarantee-cards/index.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="83" selection-start-line="7" selection-start-column="25" selection-end-line="8" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.mjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/pasargad-gateway/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="83" column="27" lean-forward="true" selection-end-line="130" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/pasargad-gateway/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -589,9 +600,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/file.xml" />
     <entry file="file://$PROJECT_DIR$/admin/site_setting/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -601,8 +610,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env.local">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="16" />
+        <state relative-caret-position="432">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-sample.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.mjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/zibal-gateway/controller.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/zibal-gateway/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#249#2115#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/pasargad-gateway/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#103#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/zarinpal-gateway/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

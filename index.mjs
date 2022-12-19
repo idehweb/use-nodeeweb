@@ -1,6 +1,6 @@
 import Server from '@nodeeweb/server'
 import Shop from '@nodeeweb/shop'
-import Form from '@nodeeweb/form'
+// import Form from '@nodeeweb/form'
 // import Service from '@nodeeweb/service'
 // import Front from '@nodeeweb/front'
 // import pasar from './plugins/pasargad-gateway/index.js'
@@ -10,7 +10,7 @@ Server({
     // client:Front,
     entity: [
         ...Shop,
-        ...Form,
+        // ...Form,
         // ...Service,
         // ...Chat
     ],
