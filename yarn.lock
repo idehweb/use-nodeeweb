@@ -291,11 +291,8 @@
 
 "@nodeeweb/server@file:///Users/hamidalinia/Documents/projects/nodeeweb-server":
   "resolved" "file:../nodeeweb-server"
-  "version" "0.0.77"
+  "version" "0.0.92"
   dependencies:
-    "@babel/preset-react" "^7.17.12"
-    "@babel/register" "^7.17.7"
-    "@babel/runtime" "^7.20.1"
     "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.10.5"
     "@mui/icons-material" "^5.10.14"
@@ -355,7 +352,7 @@
 
 "@nodeeweb/shop@file:///Users/hamidalinia/Documents/projects/nodeeweb-shop":
   "resolved" "file:../nodeeweb-shop"
-  "version" "0.0.23"
+  "version" "0.0.29"
   dependencies:
     "dotenv" "^16.0.1"
     "lodash" "^4.17.21"
