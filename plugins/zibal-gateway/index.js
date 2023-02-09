@@ -1,130 +1,147 @@
 // import _ from 'lodash'
 // Tip! Initialize this property in your payment service constructor method!
-import PasargadApi from '@pepco/nodejs-rest-sdk';
-import fs from "fs"
-import model from './model.js'
-import routes from './routes.js'
+// import PasargadApi from '@pepco/nodejs-rest-sdk';
+// import fs from "fs"
 
-let json = {
-    "dependencies": "guaranteecards",
-    "name": "guaranteecards",
-    "model": model,
-    "modelName": "Guaranteecards",
-    "routes": routes,
-    "admin": {
-        "list": {
-            "header": [
-                {"name": "guaranteecode", "type": "string"},
-                {"name": "updatedAt", "type": "date"},
-                {"name": "actions", "type": "actions", "edit": true, "delete": true, "pageBuilder": true},
-
-            ]
-        },
-        "create": {
-            "fields": [{"name": "guaranteecode", "type": "string"},]
-        },
-        "edit": {
-            "fields": [{"name": "guaranteecode", "type": "string"},]
-
-        },
-    },
-    "components": [{
-        "label": "one line - text field",
-        "name": "textfield",
-        "addable": false,
-        "settings": {
-            "general": {},
-            "design": [{"name": "padding", "type": "string"}],
-        }
-    }, {
-        "label": "multi line - text area",
-        "name": "textarea",
-        "addable": false,
-        "settings": {
-            "general": {},
-            "design": [{"name": "padding", "type": "string"}],
-        }
-    }, {
-        "label": "select - options",
-        "name": "selectoptions",
-        "addable": false,
-        "settings": {
-            "general": {},
-            "design": [{"name": "padding", "type": "string"}],
-        }
-    }, {
-        "label": "checkbox",
-        "name": "checkbox",
-        "addable": false,
-        "settings": {
-            "general": {},
-            "design": [{"name": "padding", "type": "string"}],
-        }
-    }, {
-        "label": "radio buttons",
-        "name": "radio",
-        "addable": false,
-        "settings": {
-            "general": {},
-            "design": [{"name": "padding", "type": "string"}],
-        }
-    }],
-    "edits": [{
-        "func": (req, res, next) => {
-        }
-    }],
-
-}
+let json = {}
 export {json};
 export default (props) => {
     // _.forEach()
+    console.log('run zibal gateway')
+
     if (props && props.entity)
         props.entity.map((item, i) => {
-            if (item.name === 'gateway') {
+            if (item.name === 'transaction') {
                 if (item.routes)
                     item.routes.push({
-                        "path": "/zibal/getToken",
+                        "path": "/status/zibal/",
                         "method": "post",
                         "access": "customer_all",
                         "controller": (req, res, next) => {
-                            console.log('hi', req.body.TerminalCode)
-                            // var opath = 'test.txt';
-                            // var ostring = 'Hello!'
-                            // fs.writeFileSync(opath, ostring, 'utf8');
-                            fs.writeFile('./file.xml', req.body.sign, function (err) {
-                                if (err) return console.log(err);
-                                // Code here will execute if successfully written
-                                const pasargad = new PasargadApi(
-                                    req.body.MerchantCode,
-                                    req.body.TerminalCode,
-                                    process.env.BASE_URL,
-                                    './file.xml');
-//e.q:
-// const pasargad = new PasargadApi(xxxxxx,xxxxx,"https://pep.co.ir/ipgtest","cert.xml");
+                            let data = {}, transactionObject = {}, orderObject = {};
+                            if (req.body.success == 0 || req.body.success == "0") {
+                                if (req.body.status && req.body.status == 3)
+                                    transactionObject['statusCode'] = 3
+                            }
+                            if (req.body.success == 1 || req.body.success == "1") {
+                                let Gateway = req.mongoose.model('Gateway');
+                                Gateway.findOne({slug: 'zibal'}, function (err, items) {
+                                    if (err || !item) {
+                                        return res.json({
+                                            success: false
+                                        })
+                                    }
+                                    if (!items.verify)
+                                        return res.json({
+                                            success: false
+                                        })
+                                    console.log('verify', items.verify)
 
-// Set Amount
-                                pasargad.amount = req.body.Amount;
+                                    let verify = JSON.parse(items.verify);
+                                    console.log('verify', verify)
 
-// Set Invoice Number (it MUST BE UNIQUE)
-                                pasargad.invoiceNumber = req.body.InvoiceNumber;
+                                    console.log('/status/zibal/', req.body)
+                                    verify['data']['trackId'] = req.body.trackId;
+                                    req.httpRequest(verify).then(function (parsedBody) {
+                                        console.log("parsedBody[\"data\"]", parsedBody["data"])
+                                        if (!parsedBody["data"]) {
+                                            return res.json({
+                                                'success': false,
+                                                'message': ''
+                                            })
+                                        }
+                                        data = (parsedBody["data"]);
+                                        console.log('data', data)
+                                        transactionObject['status'] = !!(data && data.result === 100);
+                                        transactionObject['statusCode'] = (data && data.result === 100) ? '1' : '-1';
+                                        if (data.cardNumber)
+                                            transactionObject['cardNumber'] = data.cardNumber;
 
-// set Invoice Date with below format (Y/m/d H:i:s)
-                                pasargad.invoiceDate = "2021/08/08 11:54:03";
+                                        if (data.refNumber)
+                                            transactionObject['RefID'] = data.refNumber;
+                                        orderObject['paymentStatus'] = (data && data.result === 100) ? 'paid' : 'notpaid'
+                                        if (data && (data.result == 201)) {
+                                            return res.json({
+                                                message: 'you did it before',
+                                                success: false
+                                            })
+                                        } else if (data && (data.result == 202)) {
+                                            return res.json({
+                                                message: 'you did noy pay',
+                                                success: false
+                                            })
+                                        }else if (data && (data.result == 102)) {
+                                            return res.json({
+                                                message: 'you did not enter merchant',
+                                                success: false
+                                            })
+                                        }else if (data && (data.result == 103)) {
+                                            return res.json({
+                                                message: 'merchant is deactive',
+                                                success: false
+                                            })
+                                        } else if (data && (data.result == 104)) {
+                                            return res.json({
+                                                message: 'merchant is unknown',
+                                                success: false
+                                            })
+                                        }else if (data && (data.result == 203)) {
+                                            return res.json({
+                                                message: 'trackId is unknown',
+                                                success: false
+                                            })
+                                        } else {
+                                            update_transaction();
+                                        }
 
-// get the Generated RedirectUrl from Pasargad API (async request):
-// output example: https://pep.shaparak.ir/payment.aspx?n=bPo+Z8GLB4oh5W0KVNohihxCu1qBB3kziabGvO1xqg8Y=
-                                pasargad.redirect().then(redirectURL => {
-                                    // redirect user to `redirectURL`
-                                    console.log(redirectURL);
-                                    return res.json({
-                                        url: redirectURL
-                                    })
+                                    }).catch(e => res.json({e, requ: verify}))
+
+
+                                    // return;
+
+                                })
+                            } else {
+                                update_transaction();
+                            }
+
+                            function update_transaction() {
+                                let Transaction = req.mongoose.model('Transaction');
+                                let Order = req.mongoose.model('Order');
+                                console.log('transactionObject', transactionObject);
+                                Transaction.findOneAndUpdate({"Authority": req.body.trackId}, {
+                                    $set: transactionObject
+
+                                }, function (err, transaction) {
+                                    if (err || !transaction) {
+                                        return res.json({
+                                            success: false,
+                                            message: "transaction could not be found",
+                                            err: err
+                                        })
+                                    }
+                                    Order.findByIdAndUpdate(transaction.order, {
+                                        $set: orderObject
+                                    }, function (order_err, updated_order) {
+                                        if (order_err || !updated_order) {
+                                            return res.json({
+                                                success: false
+                                            })
+                                        }
+                                        console.log('end of buy...');
+                                        let respon = {
+                                            success: transactionObject['status'],
+                                            orderNumber: updated_order.orderNumber
+                                        }
+
+                                        return res.json(respon);
+                                    });
                                 });
-                            });
+                            }
 
                         }
                     })
             }
+
         })
     console.log('props');
     return props;

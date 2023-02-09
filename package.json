@@ -9,9 +9,13 @@
     "@nodeeweb/service": "file:///Users/hamidalinia/Documents/projects/nodeeweb-service",
     "@nodeeweb/shop": "file:///Users/hamidalinia/Documents/projects/nodeeweb-shop",
     "@pepco/nodejs-rest-sdk": "^0.2.2",
+    "axios": "^1.2.4",
     "babel-register": "^6.26.0",
+    "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.0.1",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "pretty": "^2.0.0"
   },
   "scripts": {
     "start": "node index.mjs",

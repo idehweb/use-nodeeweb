@@ -77,6 +77,7 @@ let json = {
 }
 export {json};
 export default (props) => {
+    console.log('run zarinpal gateway')
     // _.forEach()
     if (props && props.entity)
         props.entity.map((item, i) => {
@@ -126,6 +127,6 @@ export default (props) => {
                     })
             }
         })
-    console.log('props');
+    // console.log('props');
     return props;
 }
