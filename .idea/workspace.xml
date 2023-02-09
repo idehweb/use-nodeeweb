@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49bb18a3-8663-4ba3-b14f-a7999451c504" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/plugins/farazsms-gateway/controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/farazsms-gateway/image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/farazsms-gateway/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/farazsms-gateway/model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/farazsms-gateway/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/gomrok-gateway/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/static/css/main.63a12c95.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/static/css/main.63a12c95.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/static/js/main.289518cd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/static/js/main.289518cd.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/static/js/main.289518cd.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/carttocart-gateway/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/carttocart-gateway/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/pasargad-gateway/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/pasargad-gateway/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/zarinpal-gateway/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/zarinpal-gateway/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/zibal-gateway/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/zibal-gateway/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/static/css/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/css/bundle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/static/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/js/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="49bb18a3-8663-4ba3-b14f-a7999451c504" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +29,7 @@
         <entry file="remoteDeploymentFS://&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/cinemachoo/domains/alvarstrading.com/public_html/plugins/gomrok-gateway/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="439">
-              <caret line="190" column="48" lean-forward="true" selection-start-line="190" selection-start-column="48" selection-end-line="190" selection-end-column="48" />
+              <caret line="190" column="48" selection-start-line="190" selection-start-column="48" selection-end-line="190" selection-end-column="48" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#179#205#0" expanded="true" />
@@ -64,18 +38,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="true" current-in-tab="false">
         <entry file="remoteDeploymentFS://&lt;48cf1574-cd24-446a-bb84-123e32c67a35&gt;/home/irica/index.js">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="true" current-in-tab="true">
-        <entry file="remoteDeploymentFS://&lt;48cf1574-cd24-446a-bb84-123e32c67a35&gt;/home/irica/use-nodeeweb/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -168,7 +142,6 @@
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/golafshan/domains/golafshanplus.com/public_html/plugins/pasargad-gateway/routes.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/golafshan/domains/golafshanplus.com/public_html/admin/site_setting/config.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/golafshan/domains/golafshanplus.com/public_html/theme/site_setting/config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/nodeeweb_modules/node_modules/@nodeeweb/server/src/app/handlePlugins.mjs" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/nodeeweb_modules/node_modules/@nodeeweb/shop/product/controller.mjs" />
         <option value="$PROJECT_DIR$/index.mjs" />
@@ -192,6 +165,7 @@
         <option value="$PROJECT_DIR$/plugins/gomrok-gateway/index.js" />
         <option value="&lt;ce39571c-90df-4e04-b94e-47ff272b5444&gt;/home/cinemachoo/domains/alvarstrading.com/public_html/plugins/gomrok-gateway/index.js" />
         <option value="&lt;48cf1574-cd24-446a-bb84-123e32c67a35&gt;/home/irica/use-nodeeweb/package.json" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -399,12 +373,12 @@
       <workItem from="1675331426712" duration="486000" />
       <workItem from="1675507369927" duration="6624000" />
       <workItem from="1675595876040" duration="4999000" />
-      <workItem from="1675751465368" duration="14620000" />
+      <workItem from="1675751465368" duration="14915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="524608000" />
+    <option name="totallyTimeSpent" value="524903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -734,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/pasargad-gateway/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -750,6 +717,13 @@
             <element signature="e#103#152#0" expanded="true" />
             <element signature="e#20229#21368#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
