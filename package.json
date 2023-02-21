@@ -3,11 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@nodeeweb/chat": "file:///Users/hamidalinia/Documents/projects/nodeeweb-chat",
-    "@nodeeweb/form": "file:///Users/hamidalinia/Documents/projects/nodeeweb-form",
-    "@nodeeweb/server": "file:../nodeeweb-server",
-    "@nodeeweb/service": "file:///Users/hamidalinia/Documents/projects/nodeeweb-service",
-    "@nodeeweb/shop": "file:../nodeeweb-shop",
+    "@nodeeweb/server": "^0.0.9882",
+    "@nodeeweb/shop": "^0.0.382",
     "@pepco/nodejs-rest-sdk": "^0.2.2",
     "axios": "^1.2.4",
     "babel-register": "^6.26.0",
