@@ -1,14 +1,5 @@
-// import _ from 'lodash'
-// Tip! Initialize this property in your payment service constructor method!
-// import PasargadApi from '@pepco/nodejs-rest-sdk';
-// import fs from "fs"
-
-let json = {}
-export {json};
 export default (props) => {
     // _.forEach()
-    console.log('run zibal gateway')
-
     if (props && props.entity)
         props.entity.map((item, i) => {
             if (item.name === 'transaction') {
@@ -41,7 +32,8 @@ export default (props) => {
                                     console.log('verify', verify)
 
                                     console.log('/status/zibal/', req.body)
-                                    verify['data']['trackId'] = req.body.trackId;
+                                    verify['data']['trackId'] = parseInt(req.body.trackId);
+                                    console.log('verify', verify)
                                     req.httpRequest(verify).then(function (parsedBody) {
                                         console.log("parsedBody[\"data\"]", parsedBody["data"])
                                         if (!parsedBody["data"]) {
@@ -70,12 +62,12 @@ export default (props) => {
                                                 message: 'you did noy pay',
                                                 success: false
                                             })
-                                        }else if (data && (data.result == 102)) {
+                                        } else if (data && (data.result == 102)) {
                                             return res.json({
                                                 message: 'you did not enter merchant',
                                                 success: false
                                             })
-                                        }else if (data && (data.result == 103)) {
+                                        } else if (data && (data.result == 103)) {
                                             return res.json({
                                                 message: 'merchant is deactive',
                                                 success: false
@@ -85,7 +77,7 @@ export default (props) => {
                                                 message: 'merchant is unknown',
                                                 success: false
                                             })
-                                        }else if (data && (data.result == 203)) {
+                                        } else if (data && (data.result == 203)) {
                                             return res.json({
                                                 message: 'trackId is unknown',
                                                 success: false
@@ -105,44 +97,15 @@ export default (props) => {
                             }
 
                             function update_transaction() {
-                                let Transaction = req.mongoose.model('Transaction');
-                                let Order = req.mongoose.model('Order');
-                                console.log('transactionObject', transactionObject);
-                                Transaction.findOneAndUpdate({"Authority": req.body.trackId}, {
-                                    $set: transactionObject
-
-                                }, function (err, transaction) {
-                                    if (err || !transaction) {
-                                        return res.json({
-                                            success: false,
-                                            message: "transaction could not be found",
-                                            err: err
-                                        })
-                                    }
-                                    Order.findByIdAndUpdate(transaction.order, {
-                                        $set: orderObject
-                                    }, function (order_err, updated_order) {
-                                        if (order_err || !updated_order) {
-                                            return res.json({
-                                                success: false
-                                            })
-                                        }
-                                        console.log('end of buy...');
-                                        let respon = {
-                                            success: transactionObject['status'],
-                                            orderNumber: updated_order.orderNumber
-                                        }
-
-                                        return res.json(respon);
-                                    });
-                                });
+                                req.updateTransaction(req, res, next, transactionObject)
                             }
-
                         }
                     })
             }
 
         })
-    console.log('props');
+    props['plugin']['zibal-gateway'] = [
+        {name: "merchant", value: '',label:"merchant code"}
+    ];
     return props;
 }
